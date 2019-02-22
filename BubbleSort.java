@@ -1,5 +1,12 @@
 public class BubbleSort implements SortingAlgorithm
 {
+    public static void swap (int[] arr, int i, int j)
+    {
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
+    
     public void sort(int[] a)
     {
         boolean swapped = true;
@@ -13,12 +20,5 @@ public class BubbleSort implements SortingAlgorithm
                 swapped = true;
             } //if 
         } // for
-    }
-
-    public static void swap (int[] arr, int i, int j)
-    {
-        int temp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = temp;
     }
 }

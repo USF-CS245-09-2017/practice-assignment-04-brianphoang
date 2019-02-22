@@ -1,5 +1,12 @@
 public class SelectionSort implements SortingAlgorithm
 {
+    public void swap (int[] arr, int i, int j)
+    {
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
+
     public void sort(int[] a)
     {
         for (int i = 0; i < a.length; i++)
@@ -22,12 +29,5 @@ public class SelectionSort implements SortingAlgorithm
             } //if
         } //for
         return minimum;
-    }
-    
-    public void swap (int[] arr, int i, int j)
-    {
-        int temp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = temp;
     }
 }

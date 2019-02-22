@@ -1,5 +1,12 @@
 public class InsertionSort implements SortingAlgorithm
 {
+    public static void swap (int[] arr, int i, int j)
+    {
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
+    
     public void sort(int[] a)
     {
         for (int i = 1; i < a.length; i++)
@@ -13,12 +20,5 @@ public class InsertionSort implements SortingAlgorithm
             } //while
             a[j+1] = temp;
         } //for
-    }
-
-    public static void swap (int[] arr, int i, int j)
-    {
-        int temp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = temp;
     }
 }
